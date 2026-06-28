@@ -1,0 +1,386 @@
+{
+  "users": [
+    {
+      "id": "USR_ADMIN_1",
+      "name": "Dr. Ramesh Kumar",
+      "email": "admin@ciisic.org",
+      "role": "admin",
+      "createdAt": "2026-01-15T00:00:00.000Z",
+      "approvalStatus": "approved"
+    },
+    {
+      "id": "USR_IND_TATA",
+      "name": "Sanjeev Nair",
+      "email": "tata@industry.com",
+      "role": "industry",
+      "companyName": "Tata Steel",
+      "companyLogo": "https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=120&h=120&q=80",
+      "createdAt": "2026-02-10T00:00:00.000Z",
+      "approvalStatus": "approved"
+    },
+    {
+      "id": "USR_IND_MAHINDRA",
+      "name": "Anjali Sharma",
+      "email": "mahindra@industry.com",
+      "role": "industry",
+      "companyName": "Mahindra & Mahindra",
+      "companyLogo": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=120&h=120&q=80",
+      "createdAt": "2026-02-12T00:00:00.000Z",
+      "approvalStatus": "approved"
+    },
+    {
+      "id": "USR_IND_PENDING_RELIANCE",
+      "name": "Rajesh Gupta",
+      "email": "reliance@industry.com",
+      "role": "industry",
+      "companyName": "Reliance Industries",
+      "companyLogo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=120&h=120&q=80",
+      "createdAt": "2026-06-27T10:00:00.000Z",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "USR_IND_REJECTED_FAKE",
+      "name": "Vikram Rao",
+      "email": "vikram@fakecorp.com",
+      "role": "industry",
+      "companyName": "Fake Corp LLC",
+      "companyLogo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=120&h=120&q=80",
+      "createdAt": "2026-06-26T14:30:00.000Z",
+      "approvalStatus": "rejected",
+      "rejectionReason": "The provided corporate domain and company name could not be verified by our verification board."
+    },
+    {
+      "id": "USR_INST_IITB",
+      "name": "Prof. Anil Sahasrabudhe",
+      "email": "iitb@edu.in",
+      "role": "institution",
+      "institutionName": "IIT Bombay",
+      "createdAt": "2026-01-20T00:00:00.000Z",
+      "approvalStatus": "approved"
+    },
+    {
+      "id": "USR_INST_BITS",
+      "name": "Dr. Sandhya Rao",
+      "email": "bits@edu.in",
+      "role": "institution",
+      "institutionName": "BITS Pilani",
+      "createdAt": "2026-01-25T00:00:00.000Z",
+      "approvalStatus": "approved"
+    },
+    {
+      "id": "USR_INST_PENDING_NIT",
+      "name": "Dr. Meera Sen",
+      "email": "nittrichy@edu.in",
+      "role": "institution",
+      "institutionName": "NIT Trichy",
+      "createdAt": "2026-06-27T11:15:00.000Z",
+      "approvalStatus": "pending"
+    },
+    {
+      "id": "USR_STUD_RAHUL",
+      "name": "Rahul Sharma",
+      "email": "student@ciisic.org",
+      "role": "student",
+      "studentProfile": {
+        "rollNumber": "22B030012",
+        "year": "3rd Year",
+        "branch": "Computer Science & Engineering",
+        "institutionName": "IIT Bombay",
+        "verifiedStatus": "verified",
+        "bio": "Enthusiastic developer focusing on machine learning and energy optimization solutions.",
+        "skills": [
+          "Python",
+          "TensorFlow",
+          "React",
+          "TypeScript",
+          "Data Science"
+        ]
+      },
+      "createdAt": "2026-03-01T00:00:00.000Z"
+    },
+    {
+      "id": "USR_STUD_PRIYA",
+      "name": "Priya Patel",
+      "email": "priya@student.in",
+      "role": "student",
+      "studentProfile": {
+        "rollNumber": "BITS2023A7PS012H",
+        "year": "4th Year",
+        "branch": "Electronics & Instrumentation",
+        "institutionName": "BITS Pilani",
+        "verifiedStatus": "verified",
+        "bio": "IoT hardware designer and embedded systems programmer. Passionate about agricultural automation.",
+        "skills": [
+          "C++",
+          "ROS",
+          "IoT",
+          "Embedded Systems",
+          "PCB Design"
+        ]
+      },
+      "createdAt": "2026-03-05T00:00:00.000Z"
+    },
+    {
+      "id": "USR_STUD_AMIT",
+      "name": "Amit Verma",
+      "email": "amit@student.in",
+      "role": "student",
+      "studentProfile": {
+        "rollNumber": "23B040056",
+        "year": "2nd Year",
+        "branch": "Mechanical Engineering",
+        "institutionName": "IIT Bombay",
+        "verifiedStatus": "pending",
+        "bio": "Mechanical design student with hands-on experience in CAD/CAM modeling.",
+        "skills": [
+          "SolidWorks",
+          "CAD",
+          "Python",
+          "Matlab"
+        ]
+      },
+      "createdAt": "2026-03-10T00:00:00.000Z"
+    }
+  ],
+  "challenges": [
+    {
+      "id": "CHG_TATA_001",
+      "title": "AI-Based Blast Furnace Coke Carbon Emission Optimization",
+      "problemStatement": "Blast furnaces consume large amounts of coke as a reducing agent, leading to high CO2 emissions. We need a real-time predictive algorithm that optimizes fuel-air mixtures based on continuous exhaust and telemetry feeds.",
+      "description": "Tata Steel is committed to reducing its carbon footprint by 30% over the next decade. In this challenge, students are provided with a simulated dataset containing blast furnace parameters (temperature, pressure, gas analysis, and raw material feed rate). The goal is to build an AI model that predicts coke consumption 15 minutes in advance and suggests corrective adjustments to the gas inflow and temperature to reduce coke usage while maintaining iron quality.",
+      "timeline": "3 Months (Phase 1: Model development, Phase 2: Simulation testing)",
+      "skillsRequired": [
+        "Machine Learning",
+        "Python",
+        "Process Control",
+        "Data Analytics"
+      ],
+      "budget": 650000,
+      "deadline": "2026-08-15",
+      "industrySpocId": "USR_IND_TATA",
+      "industryName": "Tata Steel",
+      "companyLogo": "https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=120&h=120&q=80",
+      "published": true,
+      "documents": [
+        {
+          "id": "DOC_T1",
+          "name": "Blast_Furnace_Technical_Specifications.pdf",
+          "size": 2450000,
+          "url": "#"
+        },
+        {
+          "id": "DOC_T2",
+          "name": "Sample_Dataset_Description.csv",
+          "size": 104000,
+          "url": "#"
+        }
+      ],
+      "createdAt": "2026-04-01T00:00:00.000Z"
+    },
+    {
+      "id": "CHG_MAH_002",
+      "title": "Autonomous Navigation Algorithm for E-Tractors in Multi-Terrain Farms",
+      "problemStatement": "Traditional GPS navigation fails under dense foliage or uneven agricultural terrain. We need an on-device computer vision and sensor fusion algorithm to allow electric compact tractors to follow straight tilling paths.",
+      "description": "Mahindra Farm Equipment sector is prototyping an autonomous 25HP electric tractor. The tractor must navigate through crop rows, detect obstacles (animals, rocks, humans), and adjust wheel torque under muddy conditions. Students must develop a sensor-fusion algorithm that combines low-cost IMU, visual odometry from a stereo camera, and wheel encoders to maintain a tilling trajectory error of under 5 cm.",
+      "timeline": "4 Months (Phase 1: Simulator, Phase 2: Real-world pilot on Mahindra test tracks)",
+      "skillsRequired": [
+        "ROS",
+        "Computer Vision",
+        "Deep Learning",
+        "Sensor Fusion",
+        "C++"
+      ],
+      "budget": 900000,
+      "deadline": "2026-09-01",
+      "industrySpocId": "USR_IND_MAHINDRA",
+      "industryName": "Mahindra & Mahindra",
+      "companyLogo": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=120&h=120&q=80",
+      "published": true,
+      "documents": [
+        {
+          "id": "DOC_M1",
+          "name": "E-Tractor_Sensor_Harness_Specs.pdf",
+          "size": 4120000,
+          "url": "#"
+        }
+      ],
+      "createdAt": "2026-04-05T00:00:00.000Z"
+    },
+    {
+      "id": "CHG_TATA_002",
+      "title": "Refractory Lining Thermal Degradation Warning System",
+      "problemStatement": "Thermal wear of ladle refractories during liquid metal transport is a major safety hazard. Create a thermal imaging classification system to identify structural degradation.",
+      "description": "We transport liquid steel at 1600°C. The refractory brick lining inside transport ladles wears out unpredictably. We have high-resolution thermal camera feeds of ladles entering and exiting the casting bay. We seek an image-processing solution that detects hotspots and predicts shell failure.",
+      "timeline": "2 Months",
+      "skillsRequired": [
+        "Computer Vision",
+        "PyTorch",
+        "Thermal Imaging Analysis"
+      ],
+      "budget": 450000,
+      "deadline": "2026-07-25",
+      "industrySpocId": "USR_IND_TATA",
+      "industryName": "Tata Steel",
+      "companyLogo": "https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=120&h=120&q=80",
+      "published": false,
+      "documents": [],
+      "createdAt": "2026-04-10T00:00:00.000Z"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "PRP_001",
+      "challengeId": "CHG_TATA_001",
+      "challengeTitle": "AI-Based Blast Furnace Coke Carbon Emission Optimization",
+      "studentId": "USR_STUD_RAHUL",
+      "studentName": "Student #RAHUL",
+      "studentInstitution": "IIT Bombay",
+      "proposalText": "We propose a lightweight LSTM-Transformer network that captures short-term temporal dynamics in furnace exhaust gases and feeds a reinforcement learning agent. Our simulations demonstrate an average 4.2% reduction in coke consumption while maintaining high quality standards. We will deliver a complete Dockerized API service and web monitoring dashboard.",
+      "documents": [
+        {
+          "id": "PDOC_1",
+          "name": "IITB_TataSteel_BlastFurnace_Proposal.pdf",
+          "size": 1850000,
+          "url": "#"
+        }
+      ],
+      "status": "revision_requested",
+      "revisionComments": "The core LSTM model looks great, but how do you handle telemetry sensor dropout and bad packet delivery? Please update the proposal detailing your fault-tolerance mechanisms.",
+      "createdAt": "2026-04-15T10:00:00.000Z",
+      "updatedAt": "2026-04-16T14:30:00.000Z"
+    },
+    {
+      "id": "PRP_002",
+      "challengeId": "CHG_MAH_002",
+      "challengeTitle": "Autonomous Navigation Algorithm for E-Tractors in Multi-Terrain Farms",
+      "studentId": "USR_STUD_PRIYA",
+      "studentName": "Student #PRIYA",
+      "studentInstitution": "BITS Pilani",
+      "proposalText": "Our solution implements an Extended Kalman Filter (EKF) combining stereo Visual Inertial Odometry (VIO) with wheel encoders. For obstacle classification, we deploy a quantized MobileNetV4 running on an onboard Coral Edge TPU to keep power consumption below 5W. We will supply full ROS2 nodes ready for deployment on your prototype tractor.",
+      "documents": [
+        {
+          "id": "PDOC_2",
+          "name": "BITS_Mahindra_AutonomousTractor_Architecture.pdf",
+          "size": 3200000,
+          "url": "#"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-04-18T11:20:00.000Z",
+      "updatedAt": "2026-04-20T09:00:00.000Z"
+    }
+  ],
+  "discussions": [
+    {
+      "id": "PRP_001",
+      "challengeId": "CHG_TATA_001",
+      "proposalId": "PRP_001",
+      "updatedAt": "2026-04-16T14:30:00.000Z",
+      "messages": [
+        {
+          "id": "MSG_1",
+          "senderId": "USR_STUD_RAHUL",
+          "senderName": "Student #RAHUL (IIT Bombay)",
+          "senderRole": "student",
+          "text": "Hello, we have submitted our preliminary proposal. We are looking forward to collaborating and modifying our architecture based on Tata Steel's production environment.",
+          "timestamp": "2026-04-15T10:15:00.000Z"
+        },
+        {
+          "id": "MSG_2",
+          "senderId": "USR_IND_TATA",
+          "senderName": "Sanjeev Nair (Tata Steel SPOC)",
+          "senderRole": "industry",
+          "text": "Thank you for the detailed layout. The mathematical foundation of the model is outstanding. However, our actual sensors experience 5% to 8% signal drops. How will your neural controller behave when data packets are missing?",
+          "timestamp": "2026-04-16T14:00:00.000Z"
+        },
+        {
+          "id": "MSG_3",
+          "senderId": "USR_IND_TATA",
+          "senderName": "Sanjeev Nair (Tata Steel SPOC)",
+          "senderRole": "industry",
+          "text": "I have officially requested a revision. Please attach an updated system safety/redundancy plan to your proposal.",
+          "timestamp": "2026-04-16T14:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "PRP_002",
+      "challengeId": "CHG_MAH_002",
+      "proposalId": "PRP_002",
+      "updatedAt": "2026-04-20T09:00:00.000Z",
+      "messages": [
+        {
+          "id": "MSG_M1",
+          "senderId": "USR_STUD_PRIYA",
+          "senderName": "Student #PRIYA (BITS Pilani)",
+          "senderRole": "student",
+          "text": "We have compiled our initial hardware layout and ROS2 nodes description. Does Mahindra have preferred simulator interfaces (like Gazebo or Webots) for pre-evaluating our odometry models?",
+          "timestamp": "2026-04-18T11:30:00.000Z"
+        },
+        {
+          "id": "MSG_M2",
+          "senderId": "USR_IND_MAHINDRA",
+          "senderName": "Anjali Sharma (Mahindra SPOC)",
+          "senderRole": "industry",
+          "text": "Priya, we use Gazebo Classic 11 with a custom URDF model of our electric tractor. We will provide this simulation package to approved teams. Your Coral Edge TPU optimization is exactly what we were looking for to preserve tractor battery life.",
+          "timestamp": "2026-04-19T10:00:00.000Z"
+        },
+        {
+          "id": "MSG_M3",
+          "senderId": "USR_IND_MAHINDRA",
+          "senderName": "Anjali Sharma (Mahindra SPOC)",
+          "senderRole": "industry",
+          "text": "Your proposal is officially approved! We are scheduling an introductory technical call inside the cell next week.",
+          "timestamp": "2026-04-20T09:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "LOG_1",
+      "action": "login",
+      "description": "Administrator Dr. Ramesh Kumar logged in.",
+      "actorName": "Dr. Ramesh Kumar",
+      "actorEmail": "admin@ciisic.org",
+      "actorRole": "admin",
+      "timestamp": "2026-06-25T09:00:00.000Z"
+    },
+    {
+      "id": "LOG_2",
+      "action": "challenge_created",
+      "description": "New draft challenge \"Refractory Lining Thermal Degradation\" created.",
+      "actorName": "Sanjeev Nair",
+      "actorEmail": "tata@industry.com",
+      "actorRole": "industry",
+      "timestamp": "2026-04-10T08:30:00.000Z"
+    },
+    {
+      "id": "LOG_3",
+      "action": "proposal_submitted",
+      "description": "Proposal submitted for \"Blast Furnace Coke Optimization\" challenge.",
+      "actorName": "Rahul Sharma",
+      "actorEmail": "student@ciisic.org",
+      "actorRole": "student",
+      "timestamp": "2026-04-15T10:00:00.000Z"
+    },
+    {
+      "id": "LOG_4",
+      "action": "revision_requested",
+      "description": "Revision requested for proposal PRP_001 by Sanjeev Nair.",
+      "actorName": "Sanjeev Nair",
+      "actorEmail": "tata@industry.com",
+      "actorRole": "industry",
+      "timestamp": "2026-04-16T14:30:00.000Z"
+    },
+    {
+      "id": "LOG_5",
+      "action": "proposal_approved",
+      "description": "Proposal PRP_002 for E-Tractor Navigation approved by Anjali Sharma.",
+      "actorName": "Anjali Sharma",
+      "actorEmail": "mahindra@industry.com",
+      "actorRole": "industry",
+      "timestamp": "2026-04-20T09:00:00.000Z"
+    }
+  ]
+}
