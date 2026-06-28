@@ -109,7 +109,7 @@ export default function App() {
       />
 
       {/* Main Platform Header */}
-      <nav className="bg-white border-b border-slate-200 py-3.5 px-6 shadow-sm sticky top-[41px] z-40">
+      <nav className="bg-white border-b border-slate-200 py-2.5 px-5 shadow-sm sticky top-[33px] z-40">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-2.5 cursor-pointer" onClick={() => setCurrentPage('landing')}>
             <div className="bg-slate-900 text-white w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm tracking-tight border border-slate-800">
